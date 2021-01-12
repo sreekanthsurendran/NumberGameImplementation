@@ -30,6 +30,8 @@ public class NumberGameUtilities {
 		if (!headerFound) {
 			headers = new HttpHeaders();
 			headers.add("number-game-id", String.valueOf(number));
+			int oldNumber = number-1;
+			questionMap.put(String.valueOf(oldNumber), null);
 			questionMap.put(String.valueOf(number), answer);
 			number++;
 
